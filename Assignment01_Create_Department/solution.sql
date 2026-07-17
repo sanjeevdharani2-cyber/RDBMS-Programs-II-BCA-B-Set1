@@ -1,7 +1,9 @@
--- Write your SQL here
+CREATE DATABASE CollegeDBBCA;
 
--- Create Database
+USE CollegeDBBCA;
 
--- Use Database
-
--- Create Department Table
+CREATE TABLE Department (
+    Department_ID INT PRIMARY KEY,
+    Department_Name VARCHAR(100),
+    HOD VARCHAR(100)
+);
