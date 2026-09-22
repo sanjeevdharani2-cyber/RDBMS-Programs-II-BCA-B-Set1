@@ -1,7 +1,10 @@
--- Create Marksheet table
-
--- Insert sample records
-
--- Display students with Marks > 80
-
--- Sort by Marks DESC
+CREATE TABLE Marksheet (
+    RollNo NUMBER(5) PRIMARY KEY,
+    Name VARCHAR2(20) NOT NULL,
+    Department VARCHAR2(20),
+    Marks NUMBER(3)
+);
+SELECT *
+FROM Marksheet
+WHERE Marks > 80
+ORDER BY Marks DESC;
